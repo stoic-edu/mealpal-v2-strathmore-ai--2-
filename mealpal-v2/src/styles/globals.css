@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Sora:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+    --background: 40 30% 96%;
+    --foreground: 216 50% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 216 50% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 216 50% 15%;
+    --primary: 216 100% 14%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 20% 92%;
+    --secondary-foreground: 216 50% 15%;
+    --muted: 40 20% 90%;
+    --muted-foreground: 216 20% 45%;
+    --accent: 350 75% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 40 20% 85%;
+    --input: 40 20% 85%;
+    --ring: 216 100% 14%;
+    --highlight: 43 65% 53%;
+    --highlight-foreground: 216 50% 15%;
+    --chart-1: 216 100% 14%;
+    --chart-2: 350 75% 45%;
+    --chart-3: 43 65% 53%;
+    --chart-4: 140 50% 40%;
+    --chart-5: 24 80% 55%;
+    --sidebar: 40 20% 94%;
+    --sidebar-foreground: 216 50% 15%;
+    --sidebar-primary: 216 100% 14%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 20% 90%;
+    --sidebar-accent-foreground: 216 50% 15%;
+    --sidebar-border: 40 20% 85%;
+    --sidebar-ring: 216 100% 14%;
+  }
+
+  .dark {
+    --radius: 0.625rem;
+    --background: 216 50% 8%;
+    --foreground: 40 20% 96%;
+    --card: 216 50% 12%;
+    --card-foreground: 40 20% 96%;
+    --popover: 216 50% 12%;
+    --popover-foreground: 40 20% 96%;
+    --primary: 43 65% 53%;
+    --primary-foreground: 216 50% 8%;
+    --secondary: 216 30% 18%;
+    --secondary-foreground: 40 20% 96%;
+    --muted: 216 30% 18%;
+    --muted-foreground: 40 10% 60%;
+    --accent: 350 75% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 216 30% 20%;
+    --input: 216 30% 20%;
+    --ring: 43 65% 53%;
+    --highlight: 43 65% 53%;
+    --highlight-foreground: 216 50% 8%;
+    --chart-1: 43 65% 53%;
+    --chart-2: 350 75% 45%;
+    --chart-3: 140 50% 40%;
+    --chart-4: 40 20% 96%;
+    --chart-5: 216 30% 20%;
+    --sidebar: 216 50% 10%;
+    --sidebar-foreground: 40 20% 96%;
+    --sidebar-primary: 43 65% 53%;
+    --sidebar-primary-foreground: 216 50% 8%;
+    --sidebar-accent: 216 30% 18%;
+    --sidebar-accent-foreground: 40 20% 96%;
+    --sidebar-border: 216 30% 20%;
+    --sidebar-ring: 43 65% 53%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased pattern-kanga;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .pattern-kanga {
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      hsl(var(--primary) / 0.03) 10px,
+      hsl(var(--primary) / 0.03) 20px
+    );
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .animate-food-bob {
+    animation: food-bob 2.5s ease-in-out infinite;
+  }
+
+  .animate-ring-wave-1 {
+    animation: ring-wave 3s ease-out infinite;
+  }
+
+  .animate-ring-wave-2 {
+    animation: ring-wave 3s ease-out infinite 1s;
+  }
+
+  .animate-twinkle-1 {
+    animation: twinkle 2s ease-in-out infinite;
+  }
+
+  .animate-twinkle-2 {
+    animation: twinkle 2.5s ease-in-out infinite 0.6s;
+  }
+
+  .animate-twinkle-3 {
+    animation: twinkle 2.2s ease-in-out infinite 1.2s;
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 4s linear infinite;
+  }
+
+  .animate-spin-slow-reverse {
+    animation: spin-slow-reverse 5s linear infinite;
+  }
+
+  .animate-spin-slower {
+    animation: spin-slow 6s linear infinite reverse;
+  }
+
+  .animate-badge-pulse {
+    animation: badge-pulse 2s ease-in-out infinite;
+  }
+
+  .animate-spin-once {
+    animation: spin-once 0.3s ease-out forwards;
+  }
+
+  .animate-steam-1 {
+    animation: steam-rise 2s ease-out infinite;
+  }
+
+  .animate-steam-2 {
+    animation: steam-rise 2.5s ease-out infinite 0.3s;
+  }
+
+  .animate-steam-3 {
+    animation: steam-rise 2.2s ease-out infinite 0.6s;
+  }
+}
+
+@keyframes food-bob {
+  0%, 100% {
+    transform: translateY(0);
+    box-shadow: 0 8px 25px -5px hsl(var(--primary) / 0.3);
+  }
+  50% {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px -5px hsl(var(--primary) / 0.45);
+  }
+}
+
+@keyframes steam-rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-10px) scale(0.6);
+    opacity: 0;
+  }
+}
+
+@keyframes ring-wave {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.6;
+    stroke-width: 3;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+    stroke-width: 0;
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-slow-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes badge-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 hsl(var(--accent) / 0.5);
+  }
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 6px hsl(var(--accent) / 0);
+  }
+}
+
+@keyframes spin-once {
+  from {
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}

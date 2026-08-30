@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+mealpal-v2/node_modules/
+
+# build output
+.next/
+mealpal-v2/.next/
+
+# python envs
+.venv/
+.venv-1/
+.venv-2/
+mealpal-v2/backend/.venv/
+
+# model artifacts
+*.pkl
+mealpal-v2/backend/models/*.pkl
