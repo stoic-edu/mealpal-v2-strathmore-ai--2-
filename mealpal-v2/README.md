@@ -10,6 +10,8 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
+## Video Demo
+https://docs.google.com/videos/d/1zTbDefiS2lrPVguhTo9orKsqS2zvTTpRkEdgsNYZQdw/play?usp=sharing
 
 ## Always-on Startup (Docker Compose)
 
