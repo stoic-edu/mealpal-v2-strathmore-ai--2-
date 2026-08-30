@@ -13,6 +13,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ## Video Demo
 https://docs.google.com/videos/d/1zTbDefiS2lrPVguhTo9orKsqS2zvTTpRkEdgsNYZQdw/play?usp=sharing
 ## Screenshots
+These images show the general look of the project including the following: login, recommedations, orders tracking, plating and many more.
 <img width="1920" height="876" alt="03-recommendations" src="https://github.com/user-attachments/assets/90674199-3d36-4b1b-b03c-40c8397b5f84" />
 <img width="1920" height="876" alt="02-home" src="https://github.com/user-attachments/assets/bdf6ddbd-5867-4868-a552-d4617670b371" />
 <img width="1920" height="876" alt="01-login" src="https://github.com/user-attachments/assets/b1496567-ec42-48d3-ac94-94e2f73c31f1" />
