@@ -13,6 +13,16 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ## Video Demo
 https://docs.google.com/videos/d/1zTbDefiS2lrPVguhTo9orKsqS2zvTTpRkEdgsNYZQdw/play?usp=sharing
 ## Screenshots
+<img width="1920" height="876" alt="03-recommendations" src="https://github.com/user-attachments/assets/90674199-3d36-4b1b-b03c-40c8397b5f84" />
+<img width="1920" height="876" alt="02-home" src="https://github.com/user-attachments/assets/bdf6ddbd-5867-4868-a552-d4617670b371" />
+<img width="1920" height="876" alt="01-login" src="https://github.com/user-attachments/assets/b1496567-ec42-48d3-ac94-94e2f73c31f1" />
+<img width="1920" height="876" alt="09-kitchen-display" src="https://github.com/user-attachments/assets/5e77f813-0dbe-4705-87fc-3540ecb170a3" />
+<img width="1920" height="876" alt="08-order-tracking" src="https://github.com/user-attachments/assets/27f44e60-d64c-4981-9caf-414ffff3a3d4" />
+<img width="1920" height="876" alt="07-calorie-calculator" src="https://github.com/user-attachments/assets/9321a1cc-7229-4584-bb72-5c8bd60c7e7a" />
+<img width="1920" height="876" alt="06-profile-health" src="https://github.com/user-attachments/assets/1b8f20d9-50e8-45b5-b0a1-c89853b48a87" />
+<img width="1920" height="876" alt="05-cart-checkout" src="https://github.com/user-attachments/assets/0c48a8eb-9586-43cd-ba98-0fceaa8e1d47" />
+<img width="1920" height="876" alt="04-menu-healthy-score" src="https://github.com/user-attachments/assets/df794729-d6a6-49af-83f2-f44706b7e313" />
+
 
 ## Always-on Startup (Docker Compose)
 
