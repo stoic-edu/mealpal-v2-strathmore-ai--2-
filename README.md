@@ -1,4 +1,4 @@
-# Meal Buddy
+# Meal Buddy x Mealpal
 
 A mobile-first cafeteria ordering app for Strathmore University. Order ahead, pay with M-Pesa, and skip the queue.
 
